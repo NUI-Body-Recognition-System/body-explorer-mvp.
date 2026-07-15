@@ -52,7 +52,7 @@ try {
   const pageErrors = [];
   const requestFailures = [];
   page.on('pageerror', error => pageErrors.push(error.message));
-  page.on('requestfailed', request => requestFailures.push(`${request.url()} — ${request.failure()?.errorText ?? 'unknown failure'}`));
+  page.on('requestfailed', request => requestFailures.push(`${request.url()} - ${request.failure()?.errorText ?? 'unknown failure'}`));
 
   await page.goto(url, { waitUntil: 'networkidle0', timeout: 30_000 });
   await new Promise(resolve => setTimeout(resolve, 2_000));

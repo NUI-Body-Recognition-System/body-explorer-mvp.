@@ -54,4 +54,4 @@
 - [ ] **Checklist failures on Windows**: Python master checklist script fails due to console emoji encoding errors unless overridden with `PYTHONIOENCODING=utf-8`.
 - [ ] **UX/SEO Check Failures**: Page audits are failing since standard webpage accessibility and metadata features are missing from this canvas-based game overlay.
 - [ ] **MediaPipe WASM loader patch**: `patchMediapipeLoader()` in `vite.config.js` patches two upstream bugs in `@mediapipe/tasks-vision@0.10.35` (see comment in file). Must be re-verified on package upgrade.
-- [ ] **Build dependency risk**: Since the vendored WASM runtime fallback was removed, a working `node_modules/` install (or internet access for a fresh `npm install`) is now REQUIRED before running `npm run build` on any new machine — there is no offline fallback.
+- [ ] **Build dependency risk**: Since the vendored WASM runtime fallback was removed, a working `node_modules/` install (or internet access for a fresh `npm install`) is now REQUIRED before running `npm run build` on any new machine - there is no offline fallback.

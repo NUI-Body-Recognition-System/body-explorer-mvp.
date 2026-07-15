@@ -4,7 +4,7 @@ import fs from 'fs';
 import path from 'path';
 
 /**
- * TECHNICAL DEBT — MediaPipe WASM loader patch
+ * TECHNICAL DEBT - MediaPipe WASM loader patch
  *
  * @mediapipe/tasks-vision@0.10.35 ships a WASM loader file
  * (node_modules/@mediapipe/tasks-vision/wasm/vision_wasm_internal.js) with
